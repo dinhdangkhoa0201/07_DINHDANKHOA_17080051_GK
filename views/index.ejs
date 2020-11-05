@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>DANH MUC CAC MAY TINH</h1>
+        <table class="table">   
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>TÊN MÁY TÍNH</th>
+                    <th>HÃNG</th>
+                    <th>GIÁ</th>
+                    <th>CHI TIẾT</th>
+                </tr>    
+            </thead>
+            <tbody>
+                <% maytinhs.forEach((maytinh) => { %>
+                  <tr>
+                      <td><%-maytinh.mamay %></td>
+                      <td><%-maytinh.ten %></td>
+                      <td><%-maytinh.hang %></td>
+                      <td><%-maytinh.gia %></td>
+                      <td><%-maytinh.thongsokythuat %></td>
+                  </tr>  
+                <%}) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
